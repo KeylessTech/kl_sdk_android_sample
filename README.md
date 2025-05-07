@@ -11,14 +11,16 @@ If you are a developer  using our SDK for the first time start with the `Scenari
 
 Before getting started, ensure:
 - your development environment is up to date
-- your are able to pull dependencies from cloudsmith - ore in README file for each project.
+- your are able to pull dependencies from cloudsmith - more in the README file for each sub-project.
 
 
 ## Support
 
 If you encounter any issues or have questions:
 - Visit our [documentation](https://docs.keyless.io/consumer/mobile-sdk-guide/getting-started).
-- feel free to open an issue in this repo.
+- Feel free to open an issue in this repo.
+- Contact delivery@keyless.io.
+
 
 ---
 

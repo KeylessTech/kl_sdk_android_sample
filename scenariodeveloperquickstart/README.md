@@ -27,13 +27,17 @@ cloudsmithTokenPartners=YOUR_CLOUDSMITH_TOKEN
 
 ## Setup Keyless API keys
 
-In order to avoid committing API keys we created a template file under `kl_sdk_android_sample/scenariodeveloperquickstart/keys.properties.template` copy the content of the template into a `kl_sdk_android_sample/scenariodeveloperquickstart/keys.properties` file and add it to the module `.gitignore`.
+In order to avoid committing API keys we created a template file under `kl_sdk_android_sample/scenariodeveloperquickstart/keys.template.properties` copy the content of the template into a `kl_sdk_android_sample/scenariodeveloperquickstart/keys.properties` file and add it to the module `.gitignore`.
 
 The template looks like
 ```markdown
 API_KEY=enter_keyless_api_key_here
 HOST=enter_keyless_host_here
 ```
+
+Make sure to remove any trialing slash from the Keyless host
+- OK     ->  `https://host.keyless.technology`
+- NOT OK ->  `https://host.keyless.technology/`
 
 Once set we can retrieve the Keyless Api Key and Keyless Host in the `ContentViewModel` from `BuildConfig` all the wiring is already there for you.
 
