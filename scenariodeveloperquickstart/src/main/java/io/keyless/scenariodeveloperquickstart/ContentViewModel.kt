@@ -29,7 +29,7 @@ class ContentViewModel : ViewModel() {
                     checkEnroll()
                 },
                 onFailure = {
-                    Log.e("ContentViewModel", "Keyless setup error.\n ${it.stackTrace}")
+                    Log.e("ContentViewModel", "Keyless setup error.\n ${it.printStackTrace()}")
                     _uiIndicatorState.value = _uiIndicatorState.value.copy(setup = ApiState.Error)
                 }
             )
